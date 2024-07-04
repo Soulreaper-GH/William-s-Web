@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "How to Set Up a Home Network",
+    "date": "2024-07-10",
+    "author": "William Saverimuthu",
+    "summary": "A step-by-step guide to setting up a secure and efficient home network.",
+    "content": [
+      {
+        "type": "text",
+        "content": "Setting up a home network can seem daunting, but with these steps, you'll have a secure and efficient network in no time."
+      },
+      {
+        "type": "heading",
+        "content": "Step 1: Choose Your Equipment"
+      },
+      {
+        "type": "text",
+        "content": "Start by selecting a reliable router. Look for one with good coverage and security features."
+      },
+      {
+        "type": "image",
+        "url": "/images/router-selection.jpg",
+        "alt": "Various router models",
+        "caption": "Choose a router that fits your needs and budget"
+      },
+      {
+        "type": "heading",
+        "content": "Step 2: Connect Your Router"
+      },
+      {
+        "type": "text",
+        "content": "Connect your router to your modem using an Ethernet cable. Then, power on both devices."
+      },
+      {
+        "type": "image",
+        "url": "/images/router-connection.jpg",
+        "alt": "Router connected to modem",
+        "caption": "Proper connection between router and modem"
+      }
+    ],
+    "tags": ["Networking", "Home Setup", "WiFi"],
+    "slug": "how-to-set-up-home-network"
+  }
+]
