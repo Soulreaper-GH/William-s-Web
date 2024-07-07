@@ -41,5 +41,132 @@
     ],
     "tags": ["Networking", "Home Setup", "WiFi"],
     "slug": "how-to-set-up-home-network"
+  },
+  {
+    "id": 2,
+    "title": "How to Create a New Profile in Microsoft Outlook",
+    "date": "2024-07-06",
+    "author": "William Saverimuthu",
+    "summary": "A comprehensive guide on how to create a new profile in Microsoft Outlook.",
+    "content": [
+      {
+        "type": "text",
+        "content": "Creating a new profile in Microsoft Outlook can help you manage multiple email accounts or set up a fresh environment for troubleshooting. Follow these steps to create a new profile:"
+      },
+      {
+        "type": "heading",
+        "content": "Step 1: Open Control Panel"
+      },
+      {
+        "type": "text",
+        "content": "Press the Windows key on your keyboard and type 'Control Panel'. Click on the Control Panel app to open it."
+      },
+      {
+        "type": "image",
+        "url": "/images/Windows-10-Control-Panel.jpg",
+        "alt": "Open Control Panel",
+        "caption": "Accessing the Control Panel from the Start menu."
+      },
+      {
+        "type": "heading",
+        "content": "Step 2: Navigate to Mail Settings"
+      },
+      {
+        "type": "text",
+        "content": "In the Control Panel, set the view to 'Small icons' or 'Large icons' for easier navigation. Click on 'Mail (Microsoft Outlook)'. This will open the Mail Setup dialog box."
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.windowsreport.com/wp-content/uploads/2021/03/mail-setup.jpg",
+        "alt": "Mail Setup",
+        "caption": "Finding the Mail settings in Control Panel."
+      },
+      {
+        "type": "heading",
+        "content": "Step 3: Open Profiles"
+      },
+      {
+        "type": "text",
+        "content": "In the Mail Setup dialog box, click on 'Show Profiles'."
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.groovypost.com/wp-content/uploads/2013/04/Outlook-Profile-Setup.jpg",
+        "alt": "Show Profiles",
+        "caption": "Opening the profiles section in Mail Setup."
+      },
+      {
+        "type": "heading",
+        "content": "Step 4: Add a New Profile"
+      },
+      {
+        "type": "text",
+        "content": "In the Mail dialog box, click on 'Add...'. Enter a name for your new profile in the 'Profile Name' field. Click 'OK'."
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.groovypost.com/wp-content/uploads/2013/04/Add-New-Outlook-Profile.jpg",
+        "alt": "Add New Profile",
+        "caption": "Creating a new profile in Outlook."
+      },
+      {
+        "type": "heading",
+        "content": "Step 5: Configure Email Account"
+      },
+      {
+        "type": "text",
+        "content": "The Add Account dialog box will appear. Here, you can configure your email account. Automatic Setup: Enter your name, email address, and password, then click 'Next'. Manual Setup: Select 'Manual setup or additional server types' and click 'Next'. Follow the prompts to enter your account details."
+      },
+      {
+        "type": "image",
+        "url": "https://support.content.office.net/en-us/media/e22269d4-2d84-4dc8-b0b1-3e58e2a10ae3.jpg",
+        "alt": "Configure Email Account",
+        "caption": "Entering account details for new profile."
+      },
+      {
+        "type": "heading",
+        "content": "Step 6: Finish Setup"
+      },
+      {
+        "type": "text",
+        "content": "Once your account is set up, click 'Finish'. Your new profile will appear in the list of profiles."
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.windowsreport.com/wp-content/uploads/2021/03/finish-mail-profile.jpg",
+        "alt": "Finish Setup",
+        "caption": "Completing the profile setup process."
+      },
+      {
+        "type": "heading",
+        "content": "Step 7: Set Default Profile (Optional)"
+      },
+      {
+        "type": "text",
+        "content": "If you want to set the new profile as your default profile, select 'Always use this profile' and choose the new profile from the dropdown menu. Click 'OK'."
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.windowsreport.com/wp-content/uploads/2021/03/set-default-profile.jpg",
+        "alt": "Set Default Profile",
+        "caption": "Setting the new profile as the default profile."
+      },
+      {
+        "type": "heading",
+        "content": "Step 8: Open Outlook with New Profile"
+      },
+      {
+        "type": "text",
+        "content": "Open Microsoft Outlook. If you set the new profile as default, it will open with that profile. If not, you'll be prompted to choose a profile each time you start Outlook."
+      },
+      {
+        "type": "image",
+        "url": "https://www.outlook-tips.net/wp-content/uploads/2018/07/choosing-a-profile.png",
+        "alt": "Open Outlook",
+        "caption": "Choosing a profile when starting Outlook."
+      }
+    ],
+    "tags": ["Outlook", "Email Management", "Profile Setup"],
+    "slug": "how-to-create-new-profile-outlook"
   }
 ]

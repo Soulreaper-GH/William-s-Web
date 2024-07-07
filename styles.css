@@ -7,6 +7,7 @@
     --secondary-bg-color: #f5f5f5;
     --border-color: #ddd;
     --transition-speed: 0.3s;
+    --section-spacing: 8rem;
 }
 
 /* Dark mode variables */
@@ -122,12 +123,12 @@ main {
 }
 
 section {
-    margin-bottom: 5rem;
-    padding: 2rem 0;
+    margin-bottom: var(--section-spacing);
+    padding: 4rem 0;
 }
 
 section p {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .hero {
@@ -137,6 +138,7 @@ section p {
     text-align: center;
     min-height: calc(100vh - 5rem);
     justify-content: center;
+    margin-bottom: var(--section-spacing);
 }
 
 .subtitle {
@@ -182,6 +184,34 @@ section p {
 .btn-outline:hover {
     background-color: var(--accent-color);
     color: var(--background-color);
+}
+
+/* Updated About section styles */
+#about {
+    background-color: var(--secondary-bg-color);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem !important;
+    margin: 8rem auto !important;
+    max-width: 1200px;
+}
+
+.about-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.about-info p {
+    margin-bottom: 1.5rem;
+}
+
+.about-info p:last-child {
+    margin-bottom: 0;
 }
 
 /* Blog posts */
@@ -266,17 +296,93 @@ section p {
     color: var(--accent-color);
 }
 
-/* Contact info */
-.contact-info {
+/* Updated Contact section styles */
+#contact {
+    background-color: var(--secondary-bg-color);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem !important;
+    margin: 8rem auto !important;
+    max-width: 1200px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-info, .social-connect {
+    flex: 1;
+}
+
+.contact-info h3, .social-connect h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.contact-info p, .social-connect p {
+    margin-bottom: 1.5rem;
+}
+
+.contact-details {
+    list-style-type: none;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+    min-width: 1.5rem;
+}
+
+.contact-details div {
     display: flex;
     flex-direction: column;
+}
+
+.contact-details strong {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.contact-details a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+}
+
+.contact-details a:hover {
+    color: var(--accent-color);
+}
+
+.social-links {
+    list-style-type: none;
+    display: flex;
     gap: 1rem;
 }
 
-.contact-info p {
+.social-links li a {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+}
+
+.social-links li a:hover {
+    color: var(--accent-color);
+}
+
+.social-links i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 /* Footer */
@@ -358,8 +464,33 @@ footer {
     margin-top: 0.5rem;
 }
 
+/* New divider styles */
+.section-divider {
+    content: '';
+    display: block;
+    margin: 8rem auto;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .section-divider {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Adjust spacing for all main sections */
+#home, #about, #blog, #contact {
+    margin-bottom: 0 !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
 /* Media queries */
 @media (max-width: 768px) {
+    :root {
+        --section-spacing: 6rem;
+    }
+
     nav ul {
         display: none;
     }
@@ -369,7 +500,8 @@ footer {
     }
 
     section {
-        margin-bottom: 4rem;
+        margin-bottom: var(--section-spacing);
+        padding: 3rem 0;
     }
 
     .blog-posts {
@@ -389,6 +521,18 @@ footer {
         width: 100%;
         text-align: center;
         margin-bottom: 1rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    #about, #contact {
+        margin: 4rem auto !important;
+    }
+
+    .section-divider {
+        margin: 4rem auto;
     }
 }
 
@@ -415,5 +559,9 @@ footer {
     a {
         text-decoration: underline;
         color: #000;
+    }
+
+    .section-divider {
+        display: none;
     }
 }
