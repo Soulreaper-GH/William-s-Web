@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('blog-posts.json');
             if (!response.ok) {
-                throw new Error('Failed to fetch blog posts');
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
             return await response.json();
         } catch (error) {
             console.error('Error fetching blog posts:', error);
-            return [];
+            throw error; // Re-throw the error for the calling function to handle
         }
     }
 
@@ -36,9 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to render all blog posts
     async function renderBlogPosts() {
+        // Show loading state
+        blogContainer.innerHTML = '<p>Loading blog posts...</p>';
+
         try {
             const blogPosts = await fetchBlogPosts();
-            blogContainer.innerHTML = ''; // Clear existing posts
+            blogContainer.innerHTML = ''; // Clear loading message
             const fragment = document.createDocumentFragment();
             blogPosts.forEach(blog => {
                 const blogPostElement = createBlogPost(blog);
@@ -56,6 +59,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Function to create DOM elements
+    function createElement(tag, attributes = {}, children = []) {
+        const element = document.createElement(tag);
+        Object.entries(attributes).forEach(([key, value]) => {
+            if (key === 'textContent') {
+                element.textContent = value;
+            } else {
+                element.setAttribute(key, value);
+            }
+        });
+        children.forEach(child => {
+            if (typeof child === 'string') {
+                element.appendChild(document.createTextNode(child));
+            } else {
+                element.appendChild(child);
+            }
+        });
+        return element;
+    }
+
     // Function to show full blog post in a modal
     async function showFullPost(id) {
         try {
@@ -64,45 +87,34 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (!post) throw new Error('Post not found');
 
-            const modal = document.createElement('div');
-            modal.classList.add('modal');
-            modal.innerHTML = `
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>${post.title}</h2>
-                    <p class="date">Published on ${new Date(post.date).toLocaleDateString()}</p>
-                    <div class="post-content"></div>
-                </div>
-            `;
+            const modal = createElement('div', { class: 'modal' });
+            const modalContent = createElement('div', { class: 'modal-content' });
+            
+            modalContent.appendChild(createElement('span', { class: 'close', textContent: '×' }));
+            modalContent.appendChild(createElement('h2', { textContent: post.title }));
+            modalContent.appendChild(createElement('p', { class: 'date', textContent: `Published on ${new Date(post.date).toLocaleDateString()}` }));
 
-            const postContent = modal.querySelector('.post-content');
+            const postContent = createElement('div', { class: 'post-content' });
             post.content.forEach(item => {
                 switch (item.type) {
                     case 'text':
-                        const p = document.createElement('p');
-                        p.textContent = item.content;
-                        postContent.appendChild(p);
+                        postContent.appendChild(createElement('p', { textContent: item.content }));
                         break;
                     case 'heading':
-                        const h3 = document.createElement('h3');
-                        h3.textContent = item.content;
-                        postContent.appendChild(h3);
+                        postContent.appendChild(createElement('h3', { textContent: item.content }));
                         break;
                     case 'image':
-                        const figure = document.createElement('figure');
-                        const img = document.createElement('img');
-                        img.src = item.url;
-                        img.alt = item.alt;
-                        figure.appendChild(img);
-                        const figcaption = document.createElement('figcaption');
-                        figcaption.textContent = item.caption;
-                        figure.appendChild(figcaption);
+                        const figure = createElement('figure');
+                        figure.appendChild(createElement('img', { src: item.url, alt: item.alt }));
+                        figure.appendChild(createElement('figcaption', { textContent: item.caption }));
                         postContent.appendChild(figure);
                         break;
                     // Add more cases for other content types as needed
                 }
             });
 
+            modalContent.appendChild(postContent);
+            modal.appendChild(modalContent);
             document.body.appendChild(modal);
 
             // Close modal functionality

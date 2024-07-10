@@ -72,6 +72,8 @@ h2 {
 /* Header and Navigation */
 header {
     background-color: rgba(255, 255, 255, 0.8);
+    /* Fallback for browsers that don't support backdrop-filter */
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: fixed;
@@ -83,6 +85,8 @@ header {
 
 .dark-mode header {
     background-color: rgba(0, 0, 0, 0.8);
+    /* Fallback for browsers that don't support backdrop-filter */
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 nav {
@@ -141,12 +145,12 @@ section p {
     margin-bottom: var(--section-spacing);
 }
 
-.subtitle {
+.hero .subtitle {
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     margin-bottom: 1rem;
 }
 
-.tagline {
+.hero .tagline {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     max-width: 600px;
     margin: 0 auto 2rem;
@@ -195,22 +199,22 @@ section p {
     max-width: 1200px;
 }
 
-.about-content {
+#about .about-content {
     max-width: 100%;
     margin: 0 auto;
 }
 
-.about-info h3 {
+#about .about-info h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
 }
 
-.about-info p {
+#about .about-info p {
     margin-bottom: 1.5rem;
 }
 
-.about-info p:last-child {
+#about .about-info p:last-child {
     margin-bottom: 0;
 }
 
@@ -248,14 +252,14 @@ section p {
     margin-bottom: 1rem;
 }
 
-.blog-post a {
+.blog-post .btn {
     text-decoration: none;
     color: var(--accent-color);
     font-weight: 500;
     transition: color var(--transition-speed) ease;
 }
 
-.blog-post a:hover {
+.blog-post .btn:hover {
     opacity: 0.8;
 }
 
@@ -282,7 +286,7 @@ section p {
     transition: background-color var(--transition-speed) ease;
 }
 
-.close {
+.modal .close {
     color: var(--text-color);
     float: right;
     font-size: 28px;
@@ -291,8 +295,8 @@ section p {
     transition: color var(--transition-speed) ease;
 }
 
-.close:hover,
-.close:focus {
+.modal .close:hover,
+.modal .close:focus {
     color: var(--accent-color);
 }
 
@@ -305,70 +309,73 @@ section p {
     max-width: 1200px;
 }
 
-.contact-content {
+#contact .contact-content {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 
-.contact-info, .social-connect {
+#contact .contact-info,
+#contact .social-connect {
     flex: 1;
 }
 
-.contact-info h3, .social-connect h3 {
+#contact .contact-info h3,
+#contact .social-connect h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
 }
 
-.contact-info p, .social-connect p {
+#contact .contact-info p,
+#contact .social-connect p {
     margin-bottom: 1.5rem;
 }
 
-.contact-details {
+#contact .contact-details {
     list-style-type: none;
 }
 
-.contact-details li {
+#contact .contact-details li {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1.5rem;
 }
 
-.contact-details i {
+#contact .contact-details i {
     font-size: 1.5rem;
     color: var(--accent-color);
     margin-right: 1rem;
     min-width: 1.5rem;
 }
 
-.contact-details div {
+#contact .contact-details div {
     display: flex;
     flex-direction: column;
 }
 
-.contact-details strong {
+#contact .contact-details strong {
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
-.contact-details a {
+#contact .contact-details a {
     color: var(--text-color);
     text-decoration: none;
     transition: color var(--transition-speed) ease;
 }
 
-.contact-details a:hover {
+#contact .contact-details a:hover {
     color: var(--accent-color);
 }
 
-.social-links {
+#contact .social-links {
     list-style-type: none;
     display: flex;
     gap: 1rem;
 }
 
-.social-links li a {
+#contact .social-links li a {
     display: flex;
     align-items: center;
     color: var(--text-color);
@@ -376,11 +383,11 @@ section p {
     transition: color var(--transition-speed) ease;
 }
 
-.social-links li a:hover {
+#contact .social-links li a:hover {
     color: var(--accent-color);
 }
 
-.social-links i {
+#contact .social-links i {
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
@@ -388,6 +395,8 @@ section p {
 /* Footer */
 footer {
     background-color: rgba(255, 255, 255, 0.8);
+    /* Fallback for browsers that don't support backdrop-filter */
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     padding: 2rem 0;
     text-align: center;
@@ -398,6 +407,8 @@ footer {
 
 .dark-mode footer {
     background-color: rgba(0, 0, 0, 0.8);
+    /* Fallback for browsers that don't support backdrop-filter */
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 /* Utility classes */
@@ -523,7 +534,7 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .contact-content {
+    #contact .contact-content {
         flex-direction: column;
     }
 
