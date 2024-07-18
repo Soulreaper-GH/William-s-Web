@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta name="description" content="William Saverimuthu - IT Analyst Portfolio. Empowering businesses through efficient IT solutions and exceptional customer experiences.">
-       <title>William Saverimuthu - IT Analyst Portfolio</title>
-       <link rel="stylesheet" href="styles.css">
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-       <link rel="icon" href="/favicon.ico" type="image/x-icon">
-       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   </head>
-<body class="dark-mode">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Saverimuthu - IT Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
         <nav class="container">
             <div class="logo">William.IT</div>
-            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
-                <i class="fas fa-moon"></i>
-            </button>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,8 +21,8 @@
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero container">
+    <main role="main">
+        <section id="home" class="section hero container">
             <h1>William Saverimuthu</h1>
             <p class="subtitle">IT Analyst</p>
             <p class="tagline">Empowering businesses through efficient IT solutions and exceptional customer experiences.</p>
@@ -41,7 +34,7 @@
 
         <div class="section-divider"></div>
 
-        <section id="about" class="container">
+        <section id="about" class="section container">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-info">
@@ -53,10 +46,10 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="section-divider"></div>
 
-        <section id="blog" class="container">
+        <section id="blog" class="section container">
             <h2>Blog</h2>
             <div id="blog-posts" class="blog-posts">
                 <!-- Blog posts will be dynamically inserted here -->
@@ -65,7 +58,7 @@
 
         <div class="section-divider"></div>
 
-        <section id="contact" class="container">
+        <section id="contact" class="section container">
             <h2>Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
@@ -83,7 +76,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <strong>Location</strong>
-                                <span>Karnataka, India</span>
+                                Karnataka, India
                             </div>
                         </li>
                     </ul>
@@ -93,17 +86,17 @@
                     <p>Connect with me on professional networks or check out my latest projects:</p>
                     <ul class="social-links">
                         <li>
-                            <a href="https://www.linkedin.com/in/williamsaverimuthu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <a href="https://www.linkedin.com/in/williamsaverimuthu" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-linkedin"></i> LinkedIn
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-twitter"></i> Twitter
                             </a>
                         </li>
@@ -118,6 +111,14 @@
             <p>&copy; 2024 William Saverimuthu. All rights reserved.</p>
         </div>
     </footer>
+
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>

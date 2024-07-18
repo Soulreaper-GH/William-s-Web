@@ -40,6 +40,8 @@
       }
     ],
     "tags": ["Networking", "Home Setup", "WiFi"],
+    "categories": ["Networking", "Home IT"],
+    "featured": true,
     "slug": "how-to-set-up-home-network"
   },
   {
@@ -167,6 +169,188 @@
       }
     ],
     "tags": ["Outlook", "Email Management", "Profile Setup"],
+    "categories": ["Software Guides", "Microsoft Office"],
+    "featured": false,
     "slug": "how-to-create-new-profile-outlook"
+  },
+  {
+    "id": 3,
+    "title": "Windows 11 vs macOS Monterey: A Comparative Analysis",
+    "date": "2024-07-11",
+    "author": "William Saverimuthu",
+    "summary": "An in-depth comparison of the latest offerings from Microsoft and Apple in the desktop OS arena.",
+    "content": [
+      {
+        "type": "text",
+        "content": "With the release of Windows 11 and macOS Monterey, users have more powerful operating systems at their fingertips. Let's compare these two titans of the desktop world."
+      },
+      {
+        "type": "heading",
+        "content": "User Interface"
+      },
+      {
+        "type": "text",
+        "content": "Windows 11 brings a centered Start menu and rounded corners, while macOS Monterey refines its already sleek interface with subtle improvements."
+      },
+      {
+        "type": "image",
+        "url": "/images/windows11-vs-macos-ui.jpg",
+        "alt": "Windows 11 and macOS Monterey interfaces side by side",
+        "caption": "The user interfaces of Windows 11 (left) and macOS Monterey (right)"
+      },
+      {
+        "type": "heading",
+        "content": "Performance"
+      },
+      {
+        "type": "text",
+        "content": "Both operating systems boast improvements in speed and efficiency, but the real-world performance can vary based on hardware specifications."
+      },
+      {
+        "type": "image",
+        "url": "/images/performance-comparison-chart.jpg",
+        "alt": "Performance comparison chart",
+        "caption": "Benchmark results comparing Windows 11 and macOS Monterey on similar hardware"
+      }
+    ],
+    "tags": ["Windows 11", "macOS", "Operating Systems", "Comparison"],
+    "categories": ["Operating Systems", "Tech Comparisons"],
+    "featured": true,
+    "slug": "windows11-vs-macos-monterey"
+  },
+  {
+    "id": 4,
+    "title": "Mastering Outlook's New Features Across Windows and Mac",
+    "date": "2024-07-13",
+    "author": "William Saverimuthu",
+    "summary": "Explore the latest features in Microsoft Outlook for both Windows and Mac users.",
+    "content": [
+      {
+        "type": "text",
+        "content": "Microsoft has been working hard to bring feature parity to Outlook across platforms. Let's look at some of the newest additions for both Windows and Mac users."
+      },
+      {
+        "type": "heading",
+        "content": "1. Intelligent Scheduling"
+      },
+      {
+        "type": "text",
+        "content": "Outlook now uses AI to suggest optimal meeting times based on participants' availability and preferences."
+      },
+      {
+        "type": "image",
+        "url": "/images/outlook-intelligent-scheduling.jpg",
+        "alt": "Outlook's intelligent scheduling feature",
+        "caption": "Outlook suggesting meeting times based on participants' schedules"
+      },
+      {
+        "type": "heading",
+        "content": "2. Focused Inbox"
+      },
+      {
+        "type": "text",
+        "content": "Available on both platforms, Focused Inbox helps prioritize important emails and keeps less critical ones in a separate tab."
+      },
+      {
+        "type": "image",
+        "url": "/images/outlook-focused-inbox.jpg",
+        "alt": "Outlook's Focused Inbox",
+        "caption": "Focused Inbox separating important emails from others"
+      }
+    ],
+    "tags": ["Outlook", "Email Management", "Productivity", "Windows", "macOS"],
+    "categories": ["Software Guides", "Microsoft Office", "Productivity Tools"],
+    "featured": false,
+    "slug": "outlook-new-features-windows-mac"
+  },
+  {
+    "id": 5,
+    "title": "Essential Terminal Commands for macOS Power Users",
+    "date": "2024-07-15",
+    "author": "William Saverimuthu",
+    "summary": "Unlock the full potential of your Mac with these powerful Terminal commands.",
+    "content": [
+      {
+        "type": "text",
+        "content": "While macOS offers a user-friendly GUI, the Terminal provides unparalleled control for power users. Here are some essential commands to enhance your Mac experience."
+      },
+      {
+        "type": "heading",
+        "content": "1. Reveal Hidden Files"
+      },
+      {
+        "type": "text",
+        "content": "Use this command to show hidden files in Finder: defaults write com.apple.finder AppleShowAllFiles YES"
+      },
+      {
+        "type": "image",
+        "url": "/images/macos-hidden-files.jpg",
+        "alt": "Hidden files revealed in macOS Finder",
+        "caption": "Finder window showing hidden files after using the Terminal command"
+      },
+      {
+        "type": "heading",
+        "content": "2. Caffeine: Prevent Sleep Mode"
+      },
+      {
+        "type": "text",
+        "content": "Keep your Mac awake with this command: caffeinate -t 3600"
+      },
+      {
+        "type": "image",
+        "url": "/images/macos-caffeine-command.jpg",
+        "alt": "Terminal window with caffeinate command",
+        "caption": "Using the caffeinate command to prevent sleep mode"
+      }
+    ],
+    "tags": ["macOS", "Terminal", "Power User", "Productivity"],
+    "categories": ["Operating Systems", "Power User Tips"],
+    "featured": true,
+    "slug": "macos-essential-terminal-commands"
+  },
+  {
+    "id": 6,
+    "title": "Customizing Windows 11: Beyond the Basics",
+    "date": "2024-07-18",
+    "author": "William Saverimuthu",
+    "summary": "Dive into advanced customization options to make Windows 11 truly your own.",
+    "content": [
+      {
+        "type": "text",
+        "content": "Windows 11 offers numerous customization options out of the box, but with a few tweaks, you can personalize your experience even further."
+      },
+      {
+        "type": "heading",
+        "content": "1. Custom Start Menu Layouts"
+      },
+      {
+        "type": "text",
+        "content": "Learn how to create a custom Start menu layout using XML and Group Policy Editor."
+      },
+      {
+        "type": "image",
+        "url": "/images/windows11-custom-start-menu.jpg",
+        "alt": "Custom Windows 11 Start Menu",
+        "caption": "A highly customized Windows 11 Start Menu layout"
+      },
+      {
+        "type": "heading",
+        "content": "2. Advanced Theming with UXThemePatcher"
+      },
+      {
+        "type": "text",
+        "content": "Use third-party tools like UXThemePatcher to apply custom themes that go beyond Windows' built-in personalization options."
+      },
+      {
+        "type": "image",
+        "url": "/images/windows11-custom-theme.jpg",
+        "alt": "Windows 11 with custom theme",
+        "caption": "Windows 11 desktop with a custom theme applied"
+      }
+    ],
+    "tags": ["Windows 11", "Customization", "Personalization", "Advanced"],
+    "categories": ["Operating Systems", "Customization"],
+    "featured": false,
+    "slug": "windows11-advanced-customization"
   }
 ]
